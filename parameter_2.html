@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Вычисление среднего арифметического</title>
+		<script type="text/javascript">
+			function calcAvg()
+			{
+				var num1 = prompt("Введите число","Число 1");
+				var num2 = prompt("Введите число","Число 2");
+				var num3 = prompt("Введите число","Число 3");
+				var num4 = prompt("Введите число","Число 4");
+				rez = doCalcAvg(num1,num2,num3,num4);
+				alert("Среднее арифметическое = " + rez);
+				
+			}
+			
+			function doCalcAvg(n1,n2,n3,n4)
+			{
+				var ans;
+				ans = (Number(n1) + Number(n2) + Number(n3) + Number(n4)) / 4;
+				return ans;
+			}
+		</script>
+	</head>
+	<body onLoad="calcAvg()">
+	</body>
+</html>

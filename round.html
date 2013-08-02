@@ -1,0 +1,21 @@
+<html>	
+	<head>
+		<title>Округление</title>
+		<script type="text/javascript">
+			function calcSquare()
+			{
+				var radius = prompt("Введите радиус","Радиус");
+				alert("Площадь равна " + doCalcSquare(radius * 100));
+			}
+			function doCalcSquare(rad)
+			{
+				return Math.round(Math.PI * rad * rad) / 100;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Вычисление площади окружности</h1>
+		
+		<input type="button" value="Вычислить" onClick="calcSquare()">
+	</body>
+</html>

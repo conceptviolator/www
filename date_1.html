@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Время компа</title>
+		<script type="text/javascript">
+			function getCurrentTime()
+			{
+				varDate = new Date();
+				alert("Текущее время компьютера - " + varDate.getHours() + ":" + varDate.getMinutes() + ":" + varDate.getSeconds());
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Сообщение о текущем времени</h1>
+		<input type="button" value="Получить текущее время" onClick="getCurrentTime()">
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Генератор сл. чисел</title>
+		<script +type="text/javascript">
+			function output()
+			{
+				alert(generate());
+			}
+			
+			function generate()
+			{
+				var rand = Math.round(Math.random() * 10);
+				return rand;
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Генерировать" onClick="output()">
+	</body>
+</html>
